@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slicingui_tim2/screen_page/login_signup_page.dart';
 import 'package:slicingui_tim2/splash.dart';
 
 void main() {
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Splash(),
+      // home: const Splash(),
+      home: const MenuPage(),
       debugShowCheckedModeBanner: false,
     );
   }
