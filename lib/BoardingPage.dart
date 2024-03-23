@@ -100,7 +100,11 @@ class _BoardPageState extends State<BoardPage> {
             width: double.infinity,
             child: ElevatedButton(
               child: Text(
-                  currentIndex == contents.length - 1 ? "Selanjutnya" : "Selanjutnya"),
+                  "Selanjutnya",
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
+                ),
                   
               onPressed: () {
                 if (currentIndex == contents.length - 1) {
