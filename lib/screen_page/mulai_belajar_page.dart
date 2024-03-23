@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 
 class PageMulai extends StatefulWidget {
   const PageMulai({super.key});
@@ -281,6 +282,8 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => PageKursus()));
                             // Aksi ketika tombol pertama ditekan
                           },
                           style: ButtonStyle(
@@ -320,6 +323,8 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => PageKursus()));
                             // Aksi ketika tombol pertama ditekan
                           },
                           style: ButtonStyle(
