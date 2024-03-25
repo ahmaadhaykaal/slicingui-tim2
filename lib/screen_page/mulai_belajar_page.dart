@@ -1,9 +1,94 @@
-import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:slicingui_tim2/main.dart';
+import 'package:slicingui_tim2/screen_page/page_login.dart';
+import 'package:slicingui_tim2/screen_page/register_page.dart';
+// import 'package:intl/intl.dart';
+
+class PageBottomBar extends StatefulWidget {
+  const PageBottomBar({super.key});
+
+  @override
+  State<PageBottomBar> createState() => _PageBottomBarState();
+}
+
+class _PageBottomBarState extends State<PageBottomBar> with SingleTickerProviderStateMixin {
+
+  TabController? _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 5, vsync: this);
+  }
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: TabBarView(
+        controller: _tabController,
+        children: const[
+          PageMulai(),
+          PageLogin(),
+          PageRegister(),
+          PageLogin(),
+          PageUtama(),
+
+        ],
+
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.vertical(
+                top: Radius.circular(20), bottom: Radius.circular(20)),
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 2,
+                blurRadius: 5,
+                offset: Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              TabBar(
+                isScrollable: true,
+                labelColor: Colors.green,
+                unselectedLabelColor: Colors.grey,
+                controller: _tabController,
+                tabs: [
+                  Tab(
+                    icon: Icon(Icons.home_outlined),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.school),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.lightbulb_outline),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.notifications_none_outlined),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.account_circle_outlined),
+                  ),
+                ],
+              ),
+              SizedBox(width: 16),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 class PageMulai extends StatefulWidget {
   const PageMulai({super.key});
@@ -13,13 +98,6 @@ class PageMulai extends StatefulWidget {
 }
 
 class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
-  TabController? _tabController;
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    _tabController = TabController(length: 5, vsync: this);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -281,7 +359,11 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
-                            // Aksi ketika tombol pertama ditekan
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => PageLogin()),
+                            );
                           },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
@@ -400,6 +482,26 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                   //rekomendasi
                   Positioned(
                     top: 350,
+                    left: 40,
+                    child: Row(
+                    children: [
+                      Text(
+                        '| ',
+                        style: TextStyle(
+                            color: Colors.blue,
+                            fontFamily: ('Open Sans'),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Rekomendasi Guru',
+                        style: TextStyle(
+                            fontFamily: ('Open Sans'),
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),),
+                  Positioned(
+                    top: 390,
                     left: MediaQuery.of(context).size.width / 6 - 50,
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -697,87 +799,9 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                       ),
                     ),
                   ),
-
-                  TabBarView(
-                    controller: _tabController,
-                    children: const [
-                      // PageRegisterForm(),
-                      // PageGaleryMovie(),
-                      // PageSearchListData(),
-                      // PageSearchListData(),
-                      // PageSearchListData(),
-                    ],
-                  ),
                 ],
               ),
             ),
-          ),
-        ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.vertical(
-                top: Radius.circular(20), bottom: Radius.circular(20)),
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 2,
-                blurRadius: 5,
-                offset: Offset(0, 3),
-              ),
-            ],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              TabBar(
-                isScrollable: true,
-                labelColor: Colors.green,
-                unselectedLabelColor: Colors.grey,
-                controller: _tabController,
-                tabs: [
-                  Tab(
-                    icon: Icon(Icons.home_outlined),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.school),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.lightbulb_outline),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.notifications_none_outlined),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.account_circle_outlined),
-                  ),
-                ],
-              ),
-              
-              SizedBox(width: 16),
-            ],
-            //   child: Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //         Tab(
-            //           icon: Icon(Icons.home_outlined),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.school),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.lightbulb_outline),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.notifications_none_outlined),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.account_circle_outlined),
-            //         ),
-            //   ],
-            // ),
           ),
         ),
       ),

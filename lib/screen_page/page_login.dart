@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:slicingui_tim2/screen_page/login_signup_page.dart';
+import 'package:slicingui_tim2/screen_page/mulai_belajar_page.dart';
 import 'package:slicingui_tim2/screen_page/register_page.dart';
 
 class PageLogin extends StatefulWidget {
@@ -14,7 +15,6 @@ class PageLogin extends StatefulWidget {
 
 class _PageLoginState extends State<PageLogin> {
   @override
-  bool varBool = true;
 
   @override
   Widget build(BuildContext context) {
@@ -296,10 +296,10 @@ class _PageLoginState extends State<PageLogin> {
                             ),
                             MaterialButton(
                               onPressed: () {
-                                // Navigator.push(
-                                //     context,
-                                //     MaterialPageRoute(
-                                //         builder: (context) => CounterView()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PageBottomBar()));
                               },
                               padding: EdgeInsets.symmetric(
                                 horizontal: 175,

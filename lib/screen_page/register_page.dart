@@ -13,7 +13,6 @@ class PageRegister extends StatefulWidget {
 
 class _PageRegisterState extends State<PageRegister> {
   @override
-  bool varBool = true;
 
   @override
   Widget build(BuildContext context) {
@@ -354,7 +353,7 @@ class _PageRegisterState extends State<PageRegister> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => PageMulai()));
+                                        builder: (context) => PageBottomBar()));
                               },
                               padding: EdgeInsets.symmetric(
                                 horizontal: 175,

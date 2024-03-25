@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:slicingui_tim2/screen_page/login_signup_page.dart';
 import 'package:slicingui_tim2/BoardingPage.dart';
 
 void main() {
