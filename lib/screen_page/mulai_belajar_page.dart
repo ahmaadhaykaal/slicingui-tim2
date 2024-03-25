@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:slicingui_tim2/main.dart';
+import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 import 'package:slicingui_tim2/screen_page/page_login.dart';
 import 'package:slicingui_tim2/screen_page/register_page.dart';
 // import 'package:intl/intl.dart';
@@ -402,6 +403,8 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => PageKursus()));
                             // Aksi ketika tombol pertama ditekan
                           },
                           style: ButtonStyle(
