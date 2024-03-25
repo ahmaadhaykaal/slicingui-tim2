@@ -68,6 +68,15 @@ flutter:
     - assets/StudyTeach.png
     - assets/logos_google-icon.png
     - assets/bgboard.png
+    - assets/eos.png
+    - assets/Group.png
+    - assets/asd.png
+    - assets/oaskd.png
+    - assets/down.png
+    - assets/back2.png
+    - assets/ig.png
+    - assets/yt.png
+    - assets/x.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -86,6 +95,10 @@ flutter:
       fonts:
         - asset: fonts/OpenSans-ExtraBold.ttf
         - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Regular.ttf
+    - family: Alata
+      fonts:
+        - asset: fonts/Alata-Regular.ttf
           # weight: 800
   #
   # For details regarding fonts from package dependencies,
