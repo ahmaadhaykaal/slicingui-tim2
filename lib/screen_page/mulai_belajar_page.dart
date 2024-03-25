@@ -363,7 +363,7 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PageLogin()),
+                                  builder: (context) => PageKursus()),
                             );
                           },
                           style: ButtonStyle(
@@ -403,9 +403,7 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => PageKursus()));
-                            // Aksi ketika tombol pertama ditekan
+                            
                           },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
