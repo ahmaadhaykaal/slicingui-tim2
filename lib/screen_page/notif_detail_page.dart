@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:slicingui_tim2/screen_page/mulai_belajar_page.dart';
@@ -140,6 +141,7 @@ class PageDetailNotif extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 14,
                                     fontFamily: ('Alata'),
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 Row(
@@ -149,15 +151,12 @@ class PageDetailNotif extends StatelessWidget {
                                       style: TextStyle(
                                         fontSize: 8,
                                         fontFamily: ('Alata'),
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    // Icon(
-                                    //   Icons.arrow_downward,
-                                    //   size: 15,
-                                    // ),
                                     Image.asset(
                                       'down.png',
-                                      width: 5,
+                                      width: 20,
                                       height: 5,
                                     ),
                                   ],
@@ -165,18 +164,14 @@ class PageDetailNotif extends StatelessWidget {
                               ],
                             ),
                             SizedBox(
-                              width: 325,
+                              width: 250,
                             ),
                             Positioned(
                               right: 0,
-                              // child: Icon(
-                              //   Icons.arrow_back,
-                              //   size: 15,
-                              // ),
                               child: Image.asset(
                                 'back2.png',
-                                width: 5,
-                                height: 5,
+                                width: 140,
+                                height: 50,
                               ),
                             ),
                           ],
@@ -227,7 +222,7 @@ class PageDetailNotif extends StatelessWidget {
                             ),
                             Container(
                               width: 200,
-                              height: 35,
+                              height: 24,
                               decoration: BoxDecoration(
                                 color: Colors.red.withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(25),
@@ -308,7 +303,7 @@ class PageDetailNotif extends StatelessWidget {
                               //button
                               child: Container(
                                 width: 200,
-                                height: 35,
+                                height: 24,
                                 decoration: BoxDecoration(
                                   color: Color(0xff0070D7),
                                   borderRadius: BorderRadius.circular(25),
@@ -343,52 +338,51 @@ class PageDetailNotif extends StatelessWidget {
                               endIndent: 45,
                             ),
 
-                            SizedBox(
-                              height: 10,
-                            ),
+                            // SizedBox(
+                            //   height: 10,
+                            // ),
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  '13940 Penggilingan Cakung Jakarta Timur',
-                                  style: TextStyle(
-                                    color: Color(0xff9A9A9A),
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                SizedBox(width: 5),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      '13940 Penggilingan Cakung Jakarta Timur',
+                                      style: TextStyle(
+                                        color: Color(0xff9A9A9A),
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Text(
+                                      'Ayo berlangganan secara gratis !!!',
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 SizedBox(
                                   width: 30,
                                 ),
                                 Image.asset(
                                   'ig.png',
-                                  width: 5,
-                                  height: 5,
+                                  width: 30,
+                                  height: 50,
                                 ),
                                 Image.asset(
                                   'x.png',
-                                  width: 5,
-                                  height: 5,
+                                  width: 30,
+                                  height: 50,
                                 ),
                                 Image.asset(
                                   'yt.png',
-                                  width: 5,
-                                  height: 5,
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Ayo berlangganan secara gratis !!!',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  width: 30,
+                                  height: 50,
                                 ),
                               ],
                             ),
@@ -396,13 +390,13 @@ class PageDetailNotif extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                          top: 900,
+                          top: 870,
                           left: 40,
                           child: Row(
                             children: [
                               Container(
                                 width: 70,
-                                height: 35,
+                                height: 27,
                                 decoration: BoxDecoration(
                                   // color: Colors.blue.withOpacity(0.5),
                                   color: Color(0xff89B8FF),
@@ -422,9 +416,10 @@ class PageDetailNotif extends StatelessWidget {
                                       SizedBox(
                                         width: 5,
                                       ),
-                                      Icon(
-                                        Icons.arrow_back,
-                                        size: 20,
+                                      Image.asset(
+                                        'back2.png',
+                                        width: 15,
+                                        height: 50,
                                       ),
                                       SizedBox(
                                         width: 5,
@@ -445,7 +440,7 @@ class PageDetailNotif extends StatelessWidget {
                               ),
                               Container(
                                 width: 90,
-                                height: 35,
+                                height: 27,
                                 decoration: BoxDecoration(
                                   // color: Colors.red.withOpacity(0.5),
                                   color: Color(0xffFF7777),
