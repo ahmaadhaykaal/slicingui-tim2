@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:slicingui_tim2/BoardingPage.dart';
-import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 
 void main() {
   runApp(const MyApp());
