@@ -5,6 +5,7 @@ import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 import 'package:slicingui_tim2/screen_page/notif_page.dart';
 import 'package:slicingui_tim2/screen_page/page_login.dart';
 import 'package:slicingui_tim2/screen_page/register_page.dart';
+import 'package:slicingui_tim2/screen_page/robot_soal_page.dart';
 // import 'package:intl/intl.dart';
 
 class PageBottomBar extends StatefulWidget {
@@ -32,7 +33,7 @@ class _PageBottomBarState extends State<PageBottomBar>
         children: const [
           PageMulai(),
           PageLogin(),
-          PageRegister(),
+          PageRobotSoal(),
           PageNotif(),
           PageUtama(),
         ],
