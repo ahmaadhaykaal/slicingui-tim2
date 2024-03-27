@@ -77,6 +77,20 @@ flutter:
     - assets/ig.png
     - assets/yt.png
     - assets/x.png
+    - assets/mat.png
+    - assets/ceklis.png
+    - assets/1bab42.png
+    - assets/2bab42.png
+    - assets/1bab71.png
+    - assets/2bab71.png
+    - assets/3bab71.png
+    - assets/4bab71.png
+    - assets/5bab71.png
+    - assets/1bab72.png
+    - assets/1bab81.png
+    - assets/1bab82.png
+    - assets/2bab82.png
+    - assets/1bab83.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -99,7 +113,12 @@ flutter:
     - family: Alata
       fonts:
         - asset: fonts/Alata-Regular.ttf
-          # weight: 800
+    - family: Sans Pro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.otf
+    - family: Space Mono
+      fonts:
+        - asset: fonts/SpaceMono-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

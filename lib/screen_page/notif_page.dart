@@ -94,7 +94,7 @@ class PageNotif extends StatelessWidget {
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -130,14 +130,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1,
                     child: ListTile(
                       title: Row(
                         children: [
@@ -147,7 +147,7 @@ class PageNotif extends StatelessWidget {
                             height: 20,
                           ),
                           SizedBox(
-                              width: 5), // Spasi antara icon dan teks title
+                              width: 5), 
                           Text(
                             'Materi Baru',
                             style: TextStyle(
@@ -180,7 +180,7 @@ class PageNotif extends StatelessWidget {
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -216,14 +216,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -233,7 +233,7 @@ class PageNotif extends StatelessWidget {
                             height: 20,
                           ),
                           SizedBox(
-                              width: 5), // Spasi antara icon dan teks title
+                              width: 5), 
                           Text(
                             'Rekomendasi Guru',
                             style: TextStyle(
@@ -259,14 +259,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -302,14 +302,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -345,14 +345,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -388,14 +388,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -431,14 +431,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -474,14 +474,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -517,14 +517,14 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
                   },
                   child: Card(
                     color: Colors.white,
-                    elevation: 4, // Tingkat bayangan
+                    elevation: 1, 
                     child: ListTile(
                       title: Row(
                         children: [
@@ -560,7 +560,7 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 10), // Spasi pertama
+                SizedBox(height: 10), 
                 InkWell(
                   onTap: () {
                     // Aksi ketika card ditekan
@@ -603,7 +603,6 @@ class PageNotif extends StatelessWidget {
                   ),
                 ),
 
-                // Tambahkan card lainnya di sini
               ],
             ),
           ),
