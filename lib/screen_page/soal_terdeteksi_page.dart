@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:slicingui_tim2/screen_page/mulai_belajar_page.dart';
 import 'package:slicingui_tim2/screen_page/notif_detail_page.dart';
+import 'package:slicingui_tim2/screen_page/robot_soal_page.dart';
 
 class PageSoalTerdeteksi extends StatelessWidget {
   const PageSoalTerdeteksi({super.key});
@@ -124,13 +126,70 @@ class PageSoalTerdeteksi extends StatelessWidget {
                 ]
               ),
               ),
-              
-
           )
-
         ],
       ),
       
     );
+  }
+}
+class HalfCircleHeader extends SliverPersistentHeaderDelegate {
+  @override
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return Container(
+      color: Colors.white,
+      alignment: Alignment.center,
+      child: Stack(
+        children: [
+          Positioned(
+            bottom: 0,
+            left: -MediaQuery.of(context).size.width / 2,
+            right: -MediaQuery.of(context).size.width / 2,
+            child: ClipOval(
+              child: Container(
+                height: MediaQuery.of(context).size.width,
+                color: Color(0xff5775BA),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 16,
+            child: Row(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PageRobotSoal()),
+                        (route) => false);
+                  },
+                  child: Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+                SizedBox(width: 15),
+                
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  double get maxExtent => 130; // Max extent of the header
+
+  @override
+  double get minExtent => 130; // Min extent of the header
+
+  @override
+  bool shouldRebuild(SliverPersistentHeaderDelegate oldDelegate) {
+    return false;
   }
 }
