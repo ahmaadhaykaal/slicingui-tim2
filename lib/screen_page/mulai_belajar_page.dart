@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:slicingui_tim2/main.dart';
+import 'package:slicingui_tim2/screen_page/artikel_page.dart';
 import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 import 'package:slicingui_tim2/screen_page/notif_page.dart';
 import 'package:slicingui_tim2/screen_page/page_login.dart';
@@ -32,7 +33,7 @@ class _PageBottomBarState extends State<PageBottomBar>
         controller: _tabController,
         children: const [
           PageMulai(),
-          PageLogin(),
+          PageArtikel(),
           PageRobotSoal(),
           PageNotif(),
           PageUtama(),
