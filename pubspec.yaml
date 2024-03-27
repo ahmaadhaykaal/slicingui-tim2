@@ -69,9 +69,6 @@ flutter:
     - assets/StudyTeach.png
     - assets/logos_google-icon.png
     - assets/bgboard.png
-    - assets/Lightning-alt.png
-    - assets/kursusbar1.png
-    - assets/kursusbar2.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -90,11 +87,7 @@ flutter:
       fonts:
         - asset: fonts/OpenSans-ExtraBold.ttf
         - asset: fonts/OpenSans-Regular.ttf
-
-    - family: ProzaLibre
-      fonts:
-        - asset: assets/font/ProzaLibre-Regular.ttf
-        - asset: assets/font/ProzaLibre-Bold.ttf
+          # weight: 800
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:slicingui_tim2/main.dart';
 import 'package:slicingui_tim2/screen_page/kursus_page.dart';
+import 'package:slicingui_tim2/screen_page/notif_page.dart';
 import 'package:slicingui_tim2/screen_page/page_login.dart';
 import 'package:slicingui_tim2/screen_page/register_page.dart';
 // import 'package:intl/intl.dart';
@@ -13,8 +14,8 @@ class PageBottomBar extends StatefulWidget {
   State<PageBottomBar> createState() => _PageBottomBarState();
 }
 
-class _PageBottomBarState extends State<PageBottomBar> with SingleTickerProviderStateMixin {
-
+class _PageBottomBarState extends State<PageBottomBar>
+    with SingleTickerProviderStateMixin {
   TabController? _tabController;
 
   @override
@@ -23,22 +24,18 @@ class _PageBottomBarState extends State<PageBottomBar> with SingleTickerProvider
     _tabController = TabController(length: 5, vsync: this);
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: TabBarView(
         controller: _tabController,
-        children: const[
+        children: const [
           PageMulai(),
           PageLogin(),
           PageRegister(),
-          PageLogin(),
+          PageNotif(),
           PageUtama(),
-
         ],
-
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
@@ -90,7 +87,6 @@ class _PageBottomBarState extends State<PageBottomBar> with SingleTickerProvider
   }
 }
 
-
 class PageMulai extends StatefulWidget {
   const PageMulai({super.key});
 
@@ -99,10 +95,64 @@ class PageMulai extends StatefulWidget {
 }
 
 class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false, // Hide the back button
+        toolbarHeight: 30, //app bar height
+        flexibleSpace: Positioned(
+          top: 0,
+          left: 0,
+          right: 0,
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(
+                bottom: Radius.circular(20),
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  '20:12',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.signal_cellular_alt_2_bar,
+                      color: Colors.black,
+                      size: 20,
+                    ),
+                    Icon(
+                      Icons.wifi,
+                      color: Colors.black,
+                      size: 20,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Transform.rotate(
+                      angle: 90 * (3.14 / 180),
+                      child: Icon(
+                        Icons.battery_5_bar_outlined,
+                        color: Colors.black,
+                        size: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
         child: Container(
@@ -114,53 +164,6 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
               child: Stack(
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  //topbar
-                  Positioned(
-                    top: 5,
-                    left: 15,
-                    child: Row(
-                      children: [
-                        SizedBox(width: 5),
-                        Text(
-                          '20:12',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Positioned(
-                    top: 5,
-                    right: 25,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.signal_cellular_alt_2_bar,
-                          color: Colors.black,
-                          size: 20,
-                        ),
-                        Icon(
-                          Icons.wifi,
-                          color: Colors.black,
-                          size: 20,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Transform.rotate(
-                          angle: 90 * (3.14 / 180),
-                          child: Icon(
-                            Icons.battery_5_bar_outlined,
-                            color: Colors.black,
-                            size: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
                   //hellokiara
                   Positioned(
                     top: 50,
@@ -403,7 +406,9 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                         ),
                         TextButton(
                           onPressed: () {
-                            
+                            Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => PageKursus()));
+                            // Aksi ketika tombol pertama ditekan
                           },
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(
@@ -485,22 +490,23 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                     top: 350,
                     left: 40,
                     child: Row(
-                    children: [
-                      Text(
-                        '| ',
-                        style: TextStyle(
-                            color: Colors.blue,
-                            fontFamily: ('Open Sans'),
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'Rekomendasi Guru',
-                        style: TextStyle(
-                            fontFamily: ('Open Sans'),
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),),
+                      children: [
+                        Text(
+                          '| ',
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontFamily: ('Open Sans'),
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Rekomendasi Guru',
+                          style: TextStyle(
+                              fontFamily: ('Open Sans'),
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
                   Positioned(
                     top: 390,
                     left: MediaQuery.of(context).size.width / 6 - 50,
@@ -524,9 +530,7 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                               ],
                             ),
                             child: GestureDetector(
-                              onTap: () {
-                                // Aksi ketika tombol ditekan
-                              },
+                              onTap: () {},
                               child: Column(
                                 children: [
                                   Image.asset(
@@ -719,7 +723,12 @@ class _PageMulaiState extends State<PageMulai> with TickerProviderStateMixin {
                             ),
                             child: GestureDetector(
                               onTap: () {
-                                // Aksi ketika tombol ditekan
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          PageKursus()),
+                                );
                               },
                               child: Column(
                                 children: [
