@@ -108,17 +108,17 @@ class PageSoalTerdeteksi extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Soal Terdeteksi :\nNilai dari sin 75° + cos  75° adalah ....\na. 1/4 √6\nb. 1/2  √2\nc. 1/2 √3\nd. 1\ne. 1/2 √6',)
+                                Text('Soal Terdeteksi :\nNilai dari sin 75° + cos  75° adalah ....\na. 1/4 √6\nb. 1/2  √2\nc. 1/2 √3\nd. 1\ne. 1/2 √6', style: TextStyle(fontFamily: "Alata"),)
                               ],
                             ),
                           ),
                         ),
-                        Text('\nPembahasan :'),
-                        Text('Menggunakan sifat trigonometri: \nsin 75 + cos 75'),
-                        Text('Melalui pengubahan fungsi:\n= sin 75 + sin(90 - 75)\n= sin 75 + sin 15'),
-                        Text('Melalui rumus penjumlahan antar fungsi:\nDengan sin A + sin B = 2. sin (A+B)/2. cos (A-B)/2\n'),
-                        Text('= 2. sin (75+15)/2. cos (75-15)/2\n= 2. sin 90/2. cos 60/2\n'),
-                        Text('= 2. sin 45. cos 30\n= 2. 1/2 √2. 1/2 √3\n= √2. 1/2 √3\n= 1/2 √6'),
+                        Text('\nPembahasan :', style: TextStyle(fontFamily: "Alata"),),
+                        Text('Menggunakan sifat trigonometri: \nsin 75 + cos 75', style: TextStyle(fontFamily: "Alata"),),
+                        Text('Melalui pengubahan fungsi:\n= sin 75 + sin(90 - 75)\n= sin 75 + sin 15', style: TextStyle(fontFamily: "Alata"),),
+                        Text('Melalui rumus penjumlahan antar fungsi:\nDengan sin A + sin B = 2. sin (A+B)/2. cos (A-B)/2\n', style: TextStyle(fontFamily: "Alata"),),
+                        Text('= 2. sin (75+15)/2. cos (75-15)/2\n= 2. sin 90/2. cos 60/2\n', style: TextStyle(fontFamily: "Alata"),),
+                        Text('= 2. sin 45. cos 30\n= 2. 1/2 √2. 1/2 √3\n= √2. 1/2 √3\n= 1/2 √6', style: TextStyle(fontFamily: "Alata"),),
                       ],
                     ),
                   ),

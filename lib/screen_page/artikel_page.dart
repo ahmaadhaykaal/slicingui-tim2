@@ -1,10 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:slicingui_tim2/bab1/bab11.dart';
+import 'package:slicingui_tim2/bab1/bab12.dart';
+import 'package:slicingui_tim2/bab1/bab14.dart';
+import 'package:slicingui_tim2/bab1/bab15.dart';
+import 'package:slicingui_tim2/bab2/bab21.dart';
 import 'package:slicingui_tim2/bab3/bab31.dart';
 import 'package:slicingui_tim2/bab3/bab32.dart';
 import 'package:slicingui_tim2/bab3/bab33.dart';
 import 'package:slicingui_tim2/bab4/bab41.dart';
 import 'package:slicingui_tim2/bab4/bab42.dart';
+import 'package:slicingui_tim2/bab5/bab51.dart';
+import 'package:slicingui_tim2/bab5/bab52.dart';
+import 'package:slicingui_tim2/bab5/bab53.dart';
+import 'package:slicingui_tim2/bab5/bab54.dart';
+import 'package:slicingui_tim2/bab5/bab55.dart';
+import 'package:slicingui_tim2/bab6/bab61.dart';
+import 'package:slicingui_tim2/bab6/bab62.dart';
 import 'package:slicingui_tim2/bab7/bab71.dart';
 import 'package:slicingui_tim2/bab7/bab72.dart';
 import 'package:slicingui_tim2/bab8/bab81.dart';
@@ -120,11 +132,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab11()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -193,11 +205,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab12()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -268,7 +280,7 @@ class PageArtikel extends StatelessWidget {
                               // Navigator.push(
                               //   context,
                               //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
+                              //       builder: (context) => PageBab13()),
                               // );
                             },
                             child: Stack(
@@ -337,11 +349,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab14()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -409,11 +421,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab15()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -517,11 +529,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab21()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -589,11 +601,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab21()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -661,11 +673,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab21()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1201,11 +1213,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab51()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1273,11 +1285,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab52()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1345,11 +1357,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab53()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1417,11 +1429,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab54()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1489,11 +1501,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab55()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1597,11 +1609,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab61()),
+                              );
                             },
                             child: Stack(
                               children: [
@@ -1669,11 +1681,11 @@ class PageArtikel extends StatelessWidget {
                           elevation: 1,
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => DetailPage()),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PageBab62()),
+                              );
                             },
                             child: Stack(
                               children: [
