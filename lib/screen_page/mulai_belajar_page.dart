@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:slicingui_tim2/main.dart';
+import 'package:slicingui_tim2/screen_page/akun_page.dart';
 import 'package:slicingui_tim2/screen_page/artikel_page.dart';
 import 'package:slicingui_tim2/screen_page/kursus_page.dart';
 import 'package:slicingui_tim2/screen_page/notif_page.dart';
@@ -36,7 +37,7 @@ class _PageBottomBarState extends State<PageBottomBar>
           PageArtikel(),
           PageRobotSoal(),
           PageNotif(),
-          PageUtama(),
+          PageAkun(),
         ],
       ),
       bottomNavigationBar: BottomAppBar(

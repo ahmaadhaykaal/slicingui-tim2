@@ -20,7 +20,7 @@ class PageRobotSoal extends StatelessWidget {
                 Positioned(
                   top: 0,
                   left: 0,
-                  child: GestureDetector(
+                  child: InkWell(
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=> PageBottomBar()));
                     },
@@ -45,7 +45,7 @@ class PageRobotSoal extends StatelessWidget {
                         width: 150,
                         height: 150,
                       ),
-                      GestureDetector(
+                      InkWell(
                         onTap: () {
                           // Pindah ke halaman lain, misalnya menggunakan Navigator
                           Navigator.push(
@@ -91,7 +91,7 @@ class PageRobotSoalHasil extends StatelessWidget {
                 Positioned(
                   top: 0,
                   left: 0,
-                  child: GestureDetector(
+                  child: InkWell(
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=> PageBottomBar()));
                     },
@@ -123,7 +123,7 @@ class PageRobotSoalHasil extends StatelessWidget {
                         width: 150,
                         height: 150,
                       ),
-                       GestureDetector(
+                       InkWell(
                         onTap: () {
                           // Pindah ke halaman lain, misalnya menggunakan Navigator
                           Navigator.push(

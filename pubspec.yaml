@@ -123,6 +123,17 @@ flutter:
       fonts:
         - asset: fonts/ProzaLibre-Bold.ttf
         - asset: fonts/ProzaLibre-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Bold.ttf
+        - asset: fonts/Montserrat-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Bold.ttf
+        - asset: fonts/Poppins-Regular.ttf
+    - family: Port Slab
+      fonts:
+        - asset: fonts/PortLligatSlab-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

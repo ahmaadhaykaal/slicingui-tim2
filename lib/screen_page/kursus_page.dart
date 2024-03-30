@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:slicingui_tim2/screen_page/mulai_belajar_page.dart';
 
 class PageKursus extends StatefulWidget {
   const PageKursus({super.key});
@@ -86,16 +87,26 @@ class _PageKursusState extends State<PageKursus> with TickerProviderStateMixin {
                   Positioned(
                     top: 50,
                     left: 50,
-                    child: Row(
-                      children: [
-                        Image(
-                          image: AssetImage(
-                            'assets/back.png',
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PageBottomBar(),
                           ),
-                          width: 20,
-                          height: 20,
-                        ),
-                      ],
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          Image(
+                            image: AssetImage(
+                              'assets/back.png',
+                            ),
+                            width: 20,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Positioned(
@@ -186,7 +197,7 @@ class _PageKursusState extends State<PageKursus> with TickerProviderStateMixin {
                   ),
 
                   Positioned(
-                      top: 260,
+                      top: 270,
                       left: 40,
                       right: 40,
                       child: Column(
@@ -254,25 +265,109 @@ class _PageKursusState extends State<PageKursus> with TickerProviderStateMixin {
                         ],
                       )),
                   Positioned(
-                    top: 380,
-                    left: 10,
-                    right: 20,
+                    top: 410,
+                    left: 40,
+                    right: 40,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset('assets/kursusbar1.png'),
-                      ],
-                    ),
-                  ),
-
-                  Positioned(
-                    top: 450,
-                    left: 10,
-                    right: 20,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Image.asset('assets/kursusbar2.png'),
+                        Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color:
+                                    Colors.white, // Warna latar belakang kotak
+                                borderRadius: BorderRadius.circular(
+                                    10), // Contoh pembulatan sudut
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey
+                                        .withOpacity(0.5), // Warna bayangan
+                                    spreadRadius: 2, // Menyebar bayangan
+                                    blurRadius: 3, // Ketajaman bayangan
+                                    offset:
+                                        Offset(0, 0.5), // Posisi bayangan (x, y)
+                                  ),
+                                ],
+                              ),
+                              child: Image.asset(
+                                'assets/University.png',
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    '5 Contoh Soal',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontFamily: 'Open Sans',),
+                                  ),
+                                  Text(
+                                    'Contoh soal yaitu 5 yang sesuai permintaan',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: 'Open Sans',
+                                        color: Colors.grey),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                        SizedBox(height: 5,),
+                        Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color:
+                                    Colors.white, // Warna latar belakang kotak
+                                borderRadius: BorderRadius.circular(
+                                    10), // Contoh pembulatan sudut
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey
+                                        .withOpacity(0.5), // Warna bayangan
+                                    spreadRadius: 2, // Menyebar bayangan
+                                    blurRadius: 3, // Ketajaman bayangan
+                                    offset:
+                                        Offset(0, 0.5), // Posisi bayangan (x, y)
+                                  ),
+                                ],
+                              ),
+                              child: Image.asset(
+                                'assets/Present.png',
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    '5 Artikel',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontFamily: 'Open Sans',),
+                                  ),
+                                  Text(
+                                    'Total 8 Artikel yang mudah dipahami',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: 'Open Sans',
+                                        color: Colors.grey),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        )
                       ],
                     ),
                   ),
@@ -431,86 +526,9 @@ class _PageKursusState extends State<PageKursus> with TickerProviderStateMixin {
                       ),
                     ]),
                   ),
-
-                  TabBarView(
-                    controller: _tabController,
-                    children: const [
-                      // PageKursus(),
-                      // PageGaleryMovie(),
-                      // PageSearchListData(),
-                      // PageSearchListData(),
-                      // PageSearchListData(),
-                    ],
-                  ),
                 ],
               ),
             ),
-          ),
-        ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.vertical(
-                top: Radius.circular(20), bottom: Radius.circular(20)),
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 2,
-                blurRadius: 5,
-                offset: Offset(0, 3),
-              ),
-            ],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              TabBar(
-                isScrollable: true,
-                labelColor: Colors.green,
-                unselectedLabelColor: Colors.grey,
-                controller: _tabController,
-                tabs: [
-                  Tab(
-                    icon: Icon(Icons.home_outlined),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.school),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.lightbulb_outline),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.notifications_none_outlined),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.account_circle_outlined),
-                  ),
-                ],
-              ),
-              SizedBox(width: 16),
-            ],
-            //   child: Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //         Tab(
-            //           icon: Icon(Icons.home_outlined),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.school),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.lightbulb_outline),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.notifications_none_outlined),
-            //         ),
-            //         Tab(
-            //           icon: Icon(Icons.account_circle_outlined),
-            //         ),
-            //   ],
-            // ),
           ),
         ),
       ),
