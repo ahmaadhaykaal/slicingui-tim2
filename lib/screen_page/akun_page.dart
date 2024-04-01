@@ -79,7 +79,7 @@ class PageAkun extends StatelessWidget {
               child: Container(
                 height: 700,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  // color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
@@ -150,6 +150,8 @@ class PageAkun extends StatelessWidget {
                               height: 40,
                             ),
                             Card(
+                              elevation: 1,
+                              color: Color(0xFFFEFBFB),
                               child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
@@ -189,6 +191,8 @@ class PageAkun extends StatelessWidget {
                             ),
                             SizedBox(height: 20,),
                             Card(
+                              elevation: 1,
+                              color: Color(0xFFFEFBFB),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                                 child: Column(
@@ -247,7 +251,7 @@ class HalfCircleHeader extends SliverPersistentHeaderDelegate {
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Container(
-      color: Colors.white,
+      // color: Colors.white,
       alignment: Alignment.center,
       child: Stack(
         children: [

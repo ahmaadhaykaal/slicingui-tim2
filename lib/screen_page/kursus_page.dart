@@ -343,6 +343,8 @@ class _PageKursusState extends State<PageKursus> with TickerProviderStateMixin {
                               ),
                               child: Image.asset(
                                 'assets/Present.png',
+                                width: 10,
+                                height: 10,
                               ),
                             ),
                             Padding(
